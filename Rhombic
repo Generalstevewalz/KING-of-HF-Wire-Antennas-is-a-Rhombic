@@ -1,0 +1,446 @@
+Rhombic Antenna Array
+
+    Writer: skylarkcolo
+    skylarkcolo
+    Nov 2, 2024
+    17 min read
+
+Updated: 5 hours ago
+
+THE ARRL and RSGB Diamond Logo, looks like a Rhombic Antenna  
+
+ree
+Expansive view of K0UO's antenna setup amidst vast green fields, showcasing a network of wires and masts strategically placed for optimal signal reception.
+Expansive view of K0UO's antenna setup amidst vast green fields, showcasing a network of wires and masts strategically placed for optimal signal reception.
+
+The Rhombic antenna array was designed in 1931 by Ed Bruce and Harald Friis
+
+ It was commonly used in the HF shortwave point to point and broadcast as a broadband directional antenna, it is also known as a diamond antenna. See 1931 patent, US 2285565A1 I (aktuellum.com)
+
+There are two primary types of Rhombic antennas that are widely recognized in the field of radio frequency communications: the resonant Rhombic antenna and the terminated Rhombic antenna. Each of these antenna types has unique characteristics and applications that make them suitable for different scenarios in wireless communication.
+
+## Resonant Rhombic Antenna
+
+The resonant Rhombic antenna is characterized by its bidirectional radiation pattern. This means that it can effectively transmit and receive signals in two opposite directions, making it an excellent choice for applications where communication is required over long distances and in both directions. The design of the resonant Rhombic antenna typically consists of four wire elements arranged in a diamond shape, which allows for efficient signal propagation.
+
+One of the key features of the resonant Rhombic antenna is its ability to operate at a specific frequency range, which is determined by its dimensions. The antenna is designed to resonate at a particular frequency, ensuring that it can efficiently transmit and receive signals within that frequency band. This resonant behavior not only enhances the antenna's performance but also helps to minimize signal loss, making it a preferred option for high-frequency applications, such as shortwave radio communications.
+
+In addition to its bidirectional capabilities, the resonant Rhombic antenna is also known for its relatively high gain and low noise characteristics. This makes it suitable for applications that require clear and reliable communication over considerable distances, such as in amateur radio or in military communications.
+
+## Terminated Rhombic Antenna
+
+On the other hand, the terminated Rhombic antenna is designed to be unidirectional, meaning it is optimized to transmit and receive signals primarily in one direction. This directional capability is achieved by incorporating a resistive termination at the antenna's far end, which helps to absorb unwanted reflections and reduces the amount of signal that is radiated in the opposite direction. As a result, the terminated Rhombic antenna can provide a more focused and stronger signal in its intended direction, making it highly effective for point-to-point communication links.
+
+The design of the terminated Rhombic antenna also follows a similar diamond-shaped configuration, but with the addition of the termination, which plays a crucial role in its performance. The termination not only enhances the antenna's directivity but also improves its impedance matching, allowing for better energy transfer between the antenna and the transmission line. This feature is particularly beneficial in applications where minimizing interference and maximizing signal strength are paramount.
+
+While the terminated Rhombic antenna may not offer the same bidirectional capabilities as its resonant counterpart, it compensates for this by providing a more powerful signal in its designated direction. This makes it an ideal choice for applications such as broadcasting, where a strong signal is required to reach a specific audience or geographic area.
+
+In summary, the two types of Rhombic antennas—the resonant Rhombic antenna and the terminated Rhombic antenna—serve distinct purposes in the realm of radio frequency communications. The resonant Rhombic antenna, with its bidirectional capabilities, is well-suited for applications requiring two-way communication, while the terminated Rhombic antenna excels in scenarios demanding unidirectional signal transmission. Each antenna type offers unique advantages that cater to the diverse needs of communication systems, highlighting the importance of selecting the appropriate antenna based on the specific requirements of the application at hand.
+
+Generally, the antenna is terminated with a value equivalent to characteristic impedance thereby causing the non-resonant condition to be establish. Making the radiation characteristics of the antenna are unidirectional. When the power through the feed lines either the 2-wire transmission line is provided to the antenna. Then the generated current travels through the legs of the Rhombic antenna (Fast Traveling Wave).
+
+These currents flow through the antenna and generate radio waves that progress in one direction through the legs of the antenna. I don't terminate my antennas, but use re-entrant line termination for a higher 90% efficiency, see more about that system later in this blog post.
+
+Animation illustrating the operation of a traveling wave antenna, showing the flow of current (I) and electric field (E) along the antenna, with a resistor (R) at one end to absorb wave energy, and wave propagation indicated at an angle θ.
+Animation illustrating the operation of a traveling wave antenna, showing the flow of current (I) and electric field (E) along the antenna, with a resistor (R) at one end to absorb wave energy, and wave propagation indicated at an angle θ.
+
+    The Proper impedance matching between an antenna and its transmission line is crucial in maximizing signal efficiency and reducing unwanted reflections, which can cause major losses in RF power going to the antenna. Impedance matching keeps the impedance of the antenna and the transmission line the same in order to see the least amount of signal per watt lost. Remember there is no SWR on a traveling wave antenna. It's only the mismatching between the 600 to 800 ohm of the antenna, and the 50 ohm transmission line, that creates it.
+
+
+Two great books to read, Rhombic Antenna Design, by A.E. Harper of Bell Labs, and W6AM, which shows Dow Wallace’s antenna farm after WW 2 to the 1980s. 
+
+The Rhombic Bibles
+The Rhombic Bibles
+
+
+The key concept with traveling-wave type antennas like a Rhombic or Vee Beam (V-Beam) is that there are no standing waves, on the antenna itself, the current and voltage levels are the same everywhere along the antenna conductors, but you still have to match it to the fed-line. 
+
+See SWR photo below it shows one of my antennas, now this is flat, no tuner!
+Always Low SWR
+Always Low SWR
+
+The Rhombic antenna is a wide-band progressive traveling-wave  (fast-wave) antenna, made of two acute-angle V-beams placed end-to-end  and terminated in an open circuit or in a resistive load. Each side of  the antenna is made of two legs of length "L" and as a whole the antenna  has the shape of a rhombus, that is, the opposite angles are of the  same value. The non-terminated Rhombic antenna is bi-directional,  whereas the terminated Rhombic antenna is directional. The Rhombic antenna is useful over a wide frequency range.  Although some changes in gain, directivity, and characteristic impedance do occur with a change in operating frequency, these changes are small enough to be neglected.  A rhombic antenna design works best at a height of one-half to a full wavelength at the lowest frequency. 
+
+So: No waiting for a rotator to turn, the system has every direction, every band, every time.
+180 degree switch layout design
+180 degree switch layout design
+
+Rhombic Radiation Patterns 
+Rhombic Radiation Patterns 
+
+The Rhombic is an equilateral parallelogram shaped antenna, it has two opposite acute angles. The tilt angle, θ is approximately equal to 90° minus the angle of major lobe. Rhombic antenna works under the principle of a fast traveling wave antenna. It is setup in the form of a rhombus or diamond shape and is normally suspended horizontally above the surface of the earth, but can be made vertical. It works great for long-distance F-layer propagation due to low vertical radiation angle, however it does have some higher radiation lobes which were thought as wasted power for long point to point use but for ham radio this help fill in closer in coverage, but overlooked in modeling and a major advantage of the antenna for ham radio use, for making more QSOs. 
+
+In designing the Rhombic it has to be kept in mind that length of all the four conductive wires must be equal, ranging between one wavelength, to over four. However, the opposite acute angles of the rhombus must be equal.
+
+To avoid reflections of the traveling wave the opposite end of the antenna feed line is terminated with a properly adjusted resistor. This leads to the absence of standing waves in any of the legs of the antenna. This absorption ensures that the current maintains a progressive phase along the antenna, supporting unidirectional wave travel and stable radiation patterns. By matching the resistor value to the antenna’s characteristic impedance, reflections are minimized, resulting in consistent traveling wave behavior and improved directionality and bandwidth. The value of load resistance is generally around 600 to 800 ohms which is also the impedance. The Voice of America antenna system at the Bethany, OH Relay Station used re-entrant Rhombics, which were 90% efficient, by re-phasing the power, instead of heating up termination resistors. My antennas also uses the re-entrant system, the Rhombic is terminated in a transmission line, which in turn is coupled back to the input through the proper voltage-matching, and phasing networks.
+
+It’s like turning a leaky faucet into a closed-loop water system—nothing goes to waste, like a super station.
+
+The antenna input impedance and radiation pattern are constant over a 2:1 range of frequencies or more. Their impedance is constant over a frequency range 4:1 or more, with the forward gain increasing at 6 dB per octave.
+
+The resultant pattern is the cumulative effect of the radiation at all four legs of the antenna. This pattern is uni-directional, it can be made bi-directional by removing the terminating resistance.
+
+The maximum gain from a Rhombic is along the direction of the main axis, which passes through the feed point to terminate in free space. The polarization obtained from a horizontal Rhombic is in the plane of rhombus, which is horizontal. But portions of the radiation, which do not combine with the main lobe, result in considerable side lobes having both horizontal and vertical polarization, which can be very advantageous for ham radio use.
+
+The old books say, "The gain of a rhombic with side lengths of four to five wavelengths is over 40 times that of a half wave dipole. About one half of this gain is realized by using two wave lengths to each of the four sides"    From the old DoD Book,.https://www.mapability.com/ei8ic/rhombic/text.php#:~:text=The%20gain%20of%20a%20rhombic,1
+
+ Maximum Size
+
+In modeling it seems to show that the maximum useable size of a rhombic is about 5 or 6 wavelengths per side. Much larger than this and the main lobe will split into a "V" pattern and you gain little else. A practical gain of around 16-18 dBd seems to be the peak of gain.
+
+The gain of a rhombic with side lengths of four to five wavelengths is over 40 times that of a half wave dipole. About one half of this gain is realized by using two wave lengths to each of the four sides. (Per the old DoD Army Rhombic Book of the 1940s).
+
+High-Frequency Stock Trading groups should be installing the rhombic antenna for their point to point use.
+One of K0UO'S Stations
+One of K0UO'S Stations
+
+It  can be truthfully be said, that  "A Rhombic antenna occupies more space per db of gain than any other antenna".  The Rhombic is a very high-gain antenna however, and it requires a lot of acres, and the efficiency when terminated is only about 50%. An alternate impedance-termination system, which was only used for a few large shortwave broadcast stations, where input powers were above 50 kw, is called the re-entrant line termination. Clyde Haehnlen SK, developed the specifications for the Voice of America antenna system at the Bethany, OH Relay Station. That re-entrant Rhombic is 90% efficient, by re-phasing the power instead of heating up termination units.  In this system, the Rhombic is terminated using a transmission line system, which in turn is coupled back to the input through a proper voltage-matching, and phasing network system. Thus, the energy in the dissipation line is fed back to the antenna, so that considerably less than 50 percent of the energy is wasted. The old VOA Bethany site in Ohio had efficiency up to over 90%. This feeds-backs the wasted RF energy "In-Phase", back into the feeder end of the antenna. For any variation from the stubs frequency, the stub must be returned.  
+
+I am now the only station (ham or Commercial) using, re-entrant line termination equipment, which is re-phasing the power, instead of heating up termination resistors.
+
+To put it in perspective, my four arrays each cover an area equal to five football fields  (You need acres). These are the world's largest ham radio wire antenna arrays in use.
+
+The KØUO Rhombic Antenna Farm in Kansas, consisting of many acres, with "Miles of Wire in the Air & On the Air". 
+
+Clyde Haehnlen kindly provided me with the design information for re-phasing a few years ago, before his passing  .https://www.k0uo.com/post/termination-resistors
+U.S. patent drawing
+U.S. patent drawing
+
+The antennas physical variables are:
+
+(1) the required take-off angle to suit propagation and
+
+required signal path length
+
+(2) the length of the rhombic sides, usually about three
+
+to six wavelengths at the design frequency
+
+(3) the included angles of the rhombic
+
+(4) the height of the wires above ground, from
+
+one and two wavelengths.
+From the top of one of the 100 foot Poles
+From the top of one of the 100 foot Poles
+
+My four antennas, each cover an area equal to five football fields.  The Rhombic has one of the poorest gain-per-acre rankings of any high gain HF antenna array, however if you have the land, they can be a good plan. I now use a Re-entrant which is 90% efficient by re-phasing the power back in the antenna, instead of heating up termination resistors
+
+A Rhombic occupies a lot of space, volume and area
+
+When something "occupies volume, not area," it means it fills a three-dimensional space rather than just covering a two-dimensional surface. Volume refers to the amount of space inside a 3D object (measured in cubic units), while area refers to the amount of space covered by a 2D shape (measured in square units). For example, a box occupies volume because it has length, width, and height, while a sheet of paper only occupies area because it has length and width but negligible thickness.
+
+An antenna's physical volume influences its signal coverage range, primarily through its relationship with antenna size, shape, and how these factors interact with the operating frequency, and the areas surroundings. The key points are:
+
+    Antenna Size and Frequency: The physical size of an antenna is typically matched to the wavelength of the signal it is designed to transmit or receive. Larger antennas (greater volume) can support longer wavelengths and may have higher gain or better efficiency at lower frequencies.
+
+    The height the other part of the 3D volume: Determines takeoff angle, and also can affects the interactions with the ground (soil) under and near the antenna (ground losses), which be considered. Many big rhombic farms were build over saltwater marshes, for a reason.
+
+    Aperture and Gain: Increasing the physical size (aperture) of an antenna can increase its gain, which focuses the signal more narrowly and extends the coverage range in specific directions. my antennas have 14 to +16 dBd of gain.
+
+
+View from the top of one of the 100 foot towers, 1500 feet from the Station
+View from the top of one of the 100 foot towers, 1500 feet from the Station
+
+Also a Rhombic antenna does have the distinct advantage of working over very wide frequency ranges, with flat SWR, and high gain.  Something a basic mono-band yagi can never do. The  Rhombic is also a very simple antenna, requiring only four supports, three supports for the V-beam, and one support for inverted V -beam derivatives. If you have a large rural property, you may want to design, build, and use a Rhombic Antenna.
+
+Varying the height of an antenna modifies the radiation patterns in both the vertical and horizontal planes, and also affect the over-all gain, particularly if the rhombic has short length sides (2 wave lengths per side, or less).
+
+ 
+
+In order to eliminate the complex mathematics necessary to determine optimum rhombic dimensions and height above ground
+Antennas Before Amps
+Antennas Before Amps
+
+The U.S. Army tech manual says: "Sometimes the antenna sides are deliberately made shorter to increase the vertical wave angle of propagation at higher operating frequencies, and to broaden the radiation pattern. The latter is usually necessary to offset ionospheric effects, which may cause a shifting of the communications path in long-distance communication. Regardless of the reasons for a compromise in the design, for optimum performance in a given frequency range, two basic factors must be considered. First, if the desired height cannot be attained, the length of the sides must be increased. Second, if the side lengths are shortened, the height of the antenna must be increased. In either case, the over-all efficiency of the rhombic is lowered. The term efficiency here refers to the signal gain and directivity for transmission in the forward direction, and signal-to-noise ratio for reception in the same direction."
+
+The Rhombic is excellent for point-to-point communications and exhibits a very low takeoff angle--a definite plus for DX, it also so has some higher angle which is great for ham use, it fills in the gaps.
+
+    Very broadband
+
+    Easy to construct
+
+    Low cost
+
+    High gain
+
+    Low noise
+
+    L  should be long enough, 2 to 4L at the lowest frequency
+
+    The values of q and a determining the shape of the main lobe
+
+    Symmetry of the total antenna system, including balun, feed lines and resistor.
+    This seems simple to do, but really is not! First you need a very good 12:1 current balun that works properly over the entire frequency range of the rhombic. 
+
+    You need a high power, non inductive load that is electrically symmetrical
+    around a central ground tab (see info else where on this blog about where resistors can be found)
+
+    Then you have a huge antenna, with pinpoint accuracy. 
+
+    How to change the antenna directions by180 degrees
+
+    How to change the antenna directions by180 degrees
+
+
+
+A Rhombic reduces E-field gradient at the high the voltage points of the antenna. It solves the problem where antenna tips or ends were charged by a transmitter with very high voltages. A similar effect occurs when receiving when the environment around the antenna is  charged from inclement weather.  The very high voltage gradient between the antenna  and the air around the antenna causes corona discharge. Which appears as a hissing, whining,  sizzling, or popping  noise in the receiver. The most intense charge buildup occurs at the highest point, farthest from earth and at a point away from other objects in open  space. The shape of a Rhombic minimizes protrusions, and places a blunt edge towards the highest charge gradient areas alone the antenna. An yagi or dipole element, on the other hand, has  protruding points that extend well out  into clear air where charge density and  voltage gradient is  highest. 
+
+During periods of  inclement weather when precipitation static is highest, the horizontally  polarized quad style element will not only have minimal exposure to high field gradients, the high impedance corona noise will not be as well matched to the receiving system.  Less RF energy will be transferred into the system.
+
+
+Some of the Rhombic Control boxes, at K0UO
+Some of the Rhombic Control boxes, at K0UO
+ABOVE: One of the remote relay control boxes used at K0UO, or 1200 feet from the main Station
+ABOVE: One of the remote relay control boxes used at K0UO, or 1200 feet from the main Station
+
+
+
+OK now you can sketch out a 4λ-per-side rhombic antenna design tailored for 100-foot towers. This is a serious DX beast dream DXer and Contester dream.
+
+📐 Design Parameters (Assuming 40m Band)
+
+    Wavelength (λ) at 7 MHz ≈ 42.8 meters (140.4 feet)
+
+    Side Length: 4λ = ~171.2 meters (561.6 feet)
+
+    Height: 100 feet (~30.5 meters) — excellent for low-angle radiation
+
+    Acute Angle: ~47° is optimal for directivity and gain
+
+    Termination: Use a 600–800Ω non-inductive resistor or go re-entrant for high efficiency
+
+🧱 Layout Dimensions
+
+Component
+	
+
+Measurement
+
+Side Length
+	
+
+~561.6 feet (4λ)
+
+Overall Length
+	
+
+~738 feet (tip to tip)
+
+Overall Width
+	
+
+~688 feet (widest point)
+
+Area Required
+	
+
+~5–6 acres
+
+Feed Point Height
+	
+
+100 feet (top of tower)
+
+Termination Height
+	
+
+100 feet (opposite tower)
+
+🛠️ Construction Tips
+
+    Support: Use four 100-foot wooden or metal towers at the rhombus corners.
+
+    Wire: Heavy-duty stranded copper clad or aluminum, 3/8" preferred for durability.
+
+    Feed: Balanced line or coax with a 12:1 balun at the feed point.
+
+    Termination: Mount resistor between wire ends at the far acute angle, elevated to match wire height.
+
+📡 Performance Highlights
+
+    Gain: Up to 15 dB with proper termination and elevation
+
+    Beamwidth: ~20–30° — razor-sharp directivity
+
+    Elevation Angle: ~10–15° — ideal for long-haul DX
+
+    Bandwidth: Covers multiple HF bands with acceptable SWR
+
+🧠 Pro Tips for Optimization
+
+    Re-entrant Termination: Even more power to the antenna, Reflect unused energy back into the antenna for ~90% efficiency — no heat wasted in resistors.
+
+    Phasing Arrays: Combine multiple rhombics for steerable beams (MUSA-style).
+
+    Ground System: Use radial or counterpoise network to minimize earth losses.
+
+🖼️ Real-World Inspiration
+
+Is my K0UO Rhombic Farm in Kiowa, KS uses this exact configuration — 4λ legs on 100-foot poles, covering multiple DX paths with re-entrant terminations. It’s a living museum of wire antenna excellence.
+
+
+A View of K0UOs Site, 1500 feet from the Station
+A View of K0UOs Site, 1500 feet from the Station
+
+ABOVE: One of the remote relay control boxes, which is 1500 feet from the shack, with solar power, and a UHF RF control system
+ABOVE: One of the remote relay control boxes, which is 1500 feet from the shack, with solar power, and a UHF RF control system
+
+
+
+
+Miles of Wire Rope used at the Antenna Farm
+Miles of Wire Rope used at the Antenna Farm
+ree
+
+3/8" triple galvanized wire rope is used for the antennas
+ree
+
+
+Above: Note for amateur radio use, the minor higher loops are very useful for making closer in contacts, I see this especially useful on 20 and 40 meters in the day time. The higher and split forward lobes were considered useless and a waste of RF power for the Point to Point stations in the past. 
+
+The ARRL did put it to good use with their antenna for good stateside coverage (1930 to 1980s).  See the ARRL coverage chart below, and since going to other antennas, they have never been able to have the same consistent RF field strength throughout the lower 48 States.
+
+FROM A OLD QST
+FROM A OLD QST
+
+For day-to-day use of the antenna in amateur radio service, remember amateurs are not point-to-point shortwave broadcasters, military or wire-services.  Amateurs just want to make QSOs! 
+
+Also most amateur radio operators don't have tens of thousands of dollars to spend on tall  towers and stacked mono-band beams, or the ability to climb and maintain such structures. Rhombic antennas were the ultimate antenna design back  in the Golden Age of Wireless. However, building one required a large tract of land and a lot of tall power poles, because they have  dimensions several times the wavelength. To most amateurs the positive thing is there are no large mono-band antennas to maintain, or rotators to fix, and rhombics allows for instantaneous direction and band  switching. They normally can be installed at very low cost, if you have  trees to hang them from, all that is needed is a lot of wire and time!   
+
+I have four 40 meter resonant designed Rhombic traveling wave antennas in use, most use +2500 foot of cable each, for the antenna. 
+
+The key concept with traveling-wave antennas is that there are no standing waves, which means that the current and voltage levels are the same everywhere along the antenna conductors. So the Rhombic antenna does have the very distinct advantage of working over very wide frequency ranges with flat SWR and high gain. 
+ree
+
+A V Beam (Vee) is just 1/2 of a Rhombic
+
+
+
+
+ree
+
+Above is a control box used at K0UO, with a 12 to 1 current balun with lightning protection
+
+
+
+
+ree
+
+The Buzzards love to use the 100 foot poles for roost!
+The red cones are for the my 4KS airport and FAA requirements
+The red cones are for the my 4KS airport and FAA requirements
+
+                          
+
+ABOVE:    I USE A REINFORCED WITH ANGLE IRON, ROHN TOWER WHICH IS HINGED UP BY A CABLE ON THE POLE, THE TOWER IS MUCH EASIER AND SAFER TO CLIMB. SOME OF THE POLES ARE 36 IN DIAMETER AT THE BASE, SO YOU WOULD NEED A 10 LONG LANYARD TO GO AROUND IT!
+ABOVE:    I USE A REINFORCED WITH ANGLE IRON, ROHN TOWER WHICH IS HINGED UP BY A CABLE ON THE POLE, THE TOWER IS MUCH EASIER AND SAFER TO CLIMB. SOME OF THE POLES ARE 36 IN DIAMETER AT THE BASE, SO YOU WOULD NEED A 10 LONG LANYARD TO GO AROUND IT!
+
+AT 100 FEET
+AT 100 FEET
+
+ABOVE: THE ANTENNAS USE 3/8 TRIPLE GALVANIZED WIRE ROPE CABLE AS THE ANTENNA RADIATOR WIRE. ALL THE CABLES GO THROUGH PULLEYS WHICH ARE  STRETCHED TIGHT UP WITH CABLE PULLS ON THE GROUND FROM BOTH END OF THE DIAMOND SHAPED ANTENNAS ( @1000 TO 1500LBS OF PULL)
+ABOVE: THE ANTENNAS USE 3/8 TRIPLE GALVANIZED WIRE ROPE CABLE AS THE ANTENNA RADIATOR WIRE. ALL THE CABLES GO THROUGH PULLEYS WHICH ARE  STRETCHED TIGHT UP WITH CABLE PULLS ON THE GROUND FROM BOTH END OF THE DIAMOND SHAPED ANTENNAS ( @1000 TO 1500LBS OF PULL)
+
+
+3/8" Cable
+3/8" Cable
+ABOVE: THE 100 FOOT TOWER IS REINFORCED WITH ANGLE IRON, AND THE LIFT CABLE IS AT 40 FOOT ON EACH POLE. THE TOWER FOLD OVER HINGE IS PERMANENTLY MOUNTED TO A SKID LOADER BUCKET, AND THE SKID LOADER IS JUST BACKED TO EACH ONE OF THE POLES THAT MIGHT NEED ANTENNA REPAIRS. AFTER THE TOWER IS RAISED THEN IT IS STRAPPED TO THE POLE EVERY 20 FEET. THE TOWER ALSO HAS A 3/8 SAFETY CABLE GRAB SYSTEM ON IT. 100% FALL PROTECTION IF YOUR NOT CONNECTED YOUR NOT PROTECTED.
+ABOVE: THE 100 FOOT TOWER IS REINFORCED WITH ANGLE IRON, AND THE LIFT CABLE IS AT 40 FOOT ON EACH POLE. THE TOWER FOLD OVER HINGE IS PERMANENTLY MOUNTED TO A SKID LOADER BUCKET, AND THE SKID LOADER IS JUST BACKED TO EACH ONE OF THE POLES THAT MIGHT NEED ANTENNA REPAIRS. AFTER THE TOWER IS RAISED THEN IT IS STRAPPED TO THE POLE EVERY 20 FEET. THE TOWER ALSO HAS A 3/8 SAFETY CABLE GRAB SYSTEM ON IT. 100% FALL PROTECTION IF YOUR NOT CONNECTED YOUR NOT PROTECTED.
+
+THE TOWER IS MUCH EASIER AND SAFER TO CLIMB. 
+THE TOWER IS MUCH EASIER AND SAFER TO CLIMB. 
+Building the Climb Tower
+Building the Climb Tower
+
+The Base id Welded to a Skid-loader Bucket for easy movement 
+The Base id Welded to a Skid-loader Bucket for easy movement 
+
+
+Climb Tower in place
+Climb Tower in place
+
+CLIMBING THE TOWER BY THE 100 FT POLES
+CLIMBING THE TOWER BY THE 100 FT POLES
+
+
+
+
+Many of the Rhombic insulators are from W6AM's station (which were found at the TRW Southern California parking lot sale years ago).
+
+
+OVERVIEW of all the K0UO pages: The Rhombic antenna is a wide-band progressive traveling-wave (fast-wave) antenna, V-beams, Receive Directivity Factor (RDF) towers, VOA, W1AW, W6AM, Beverage traveling wave antenna, HF curtain, Broadcast tower, ham radio, balun for matching, IEEE, terminating resistor, E and H field, far field modeling, antenna measurements, NEC2 NEC4, k0uo, wire antennas, Curtain antennas, baluns, VOA sites, LPDA, W6AM, W7URA, Feed-lines, and 4KS Walz Airport at Kiowa, KS.
+
+Welcome to K0UO.com, where we dive into the world of rhombic, curtain, and Vee Beam antennas at the Walz Kiowa, KS Airport 4KS. Explore the intricate world of rhombic antennas, Receive Directivity Factor (RDF) towers, Beverage traveling wave antennas, and so much more. Join us as we delve into the fascinating realm of antenna farming and ham radio technology.
+
+For Design see
+
+https://www.k0uo.com/post/rhombic-math-design
+
+SEE Patents for Rhombic:     US2517238A - Radiating termination for a rhombic antenna - Google Patents
+
+A good read,Big and Old  27dB antenna,  https://wtfda.org/wp-content/uploads/mem/rhombic.pdf
+Traveling Wave Antennas Simplified https://www.youtube.com/watch?v=nPMk4pFBsWc
+
+ 2 meter rhombic: @ https://www.youtube.com/watch?v=5XNaXZ2qz4Y
+
+SEE:
+
+Edmund Laport's "Radio Antenna Engineering", published by Mcgraw-Hill in 1952
+
+Navy design book on rhombics. This may very well be a Navy'ized version of the War Department document (TM11-2611)
+
+ 16 Rhombics  https://www.youtube.com/watch?v=-z5O1LHEFlc
+
+The 1945 Army rhombic book
+
+A. E. Harper, "Rhombic Antenna Design", CY 1941
+
+General Steve Walz V31KW/K0UO
+
+TO SEE the complete Blog list check @  https://www.k0uo.com/k0uo
+
+Steve's  Group https://en.wikipedia.org/wiki/RSI_Corporation
+ree
+
+1,790 views
+2 comments
+Recent Posts
+See All
+Baluns, a VOA +100,000-200,000 watt and others
+Baluns, a VOA +100,000-200,000 watt and others
+395
+0
+Rhombic Termination Resistors
+Rhombic Termination Resistors
+1,447
+0
+Big Antenna, The KING of Wire Arrays
+Big Antenna, The KING of Wire Arrays
+475
+0
+2 Comments
+Rated 5 out of 5 stars.
+5.0 | 2 Ratings
+Update your rating
+Guest
+Jun 14
+Rated 5 out of 5 stars.
+
+Some of the best real world information I've ever seen.  This guy has really done it, he's not just modeling and theorizing he's building and using them.  A Very impressive construction project
+Like
+Guest
+Feb 19
+Rated 5 out of 5 stars.
+
+The Best over Rhombic info
+Like
+
+K0UO Rhombic Antenna Farm
+
+k0uo@arrl.net
+
+K0UO Rhombic antenna Farm
+
+17353 SE U.S. Hwy 281
+Kiowa, KS 67070
